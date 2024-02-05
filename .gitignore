@@ -1,0 +1,6 @@
+data/
+.ipynb_checkpoints/
+.python-version
+cache/
+__pycache__/
+.DS_Store
