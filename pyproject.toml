@@ -20,6 +20,7 @@ scikit-learn = "^1.4.0"
 jupyterlab = "^4.0.12"
 ipykernel = "^6.29.0"
 watchdog = "^3.0.0"
+cartopy = "^0.22.0"
 
 [build-system]
 requires = ["poetry-core"]
