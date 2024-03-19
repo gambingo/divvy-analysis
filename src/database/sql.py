@@ -1,9 +1,20 @@
 import os
+import warnings
 
 from sqlalchemy import create_engine
+from dotenv import load_dotenv
+import pandas as pd
 
 
-def upload_dataframe_to_database(df, table_name, if_exists="append"):
+
+load_dotenv()
+pd.options.mode.chained_assignment = None
+warnings.simplefilter(action='ignore', category=UserWarning)
+"""I worry this is too greedy, but I just want to supress the timedelta
+    conversion warning"""
+
+
+def upload_dataframe(df, table_name, if_exists="append"):
     engine = create_engine(database_uri())
     df.to_sql(table_name, engine, if_exists=if_exists, index=False)
 

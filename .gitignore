@@ -1,4 +1,5 @@
 data/
+data/__MACOSX/
 .ipynb_checkpoints/
 .python-version
 cache/
@@ -6,3 +7,4 @@ __pycache__/
 */__pycache__/
 .DS_Store
 .env
+metabase/

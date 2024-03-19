@@ -17,6 +17,8 @@ scikit-learn = "^1.4.0"
 python-dotenv = "^1.0.1"
 sqlalchemy = "^2.0.27"
 selenium = "^4.18.1"
+tqdm = "^4.66.2"
+psycopg2 = "^2.9.9"
 
 
 [tool.poetry.group.dev.dependencies]
